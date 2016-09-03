@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build",
+    "test": "./node_modules/.bin/mocha --reporter nyan",
+    "start": "nodemon --exec node app.js"
   },
   "keywords": [],
   "author": "Kelvin Knighton",
@@ -14,5 +16,14 @@
     "express": "*",
     "jade": "*",
     "nodemailer": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "mocha": "^3.0.1",
+    "should": "^10.0.0",
+    "supertest": "^2.0.0"
   }
 }

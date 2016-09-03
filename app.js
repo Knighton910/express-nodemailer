@@ -1,4 +1,4 @@
-var express = require('express')
+const express = require('express')
 var path = require('path')
 var bparser = require('body-parser')
 var nodeMail = require('nodemailer')
